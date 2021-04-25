@@ -21,7 +21,7 @@
                     </router-link>
                 </template>
                 <template #cell(size)="data">
-                    {{ (data.value / 8 / 1024).toFixed(2) }} Kb
+                    {{ (data.value / 1024).toFixed(2) }} Kb
                 </template>
                 <template #cell(actions)="data">
                     <router-link :to="{ name: 'RegistryShow', params: { fileName: data.item.fileName } }" class="btn btn-outline-secondary btn-sm mr-1" title="Show registry file data.">
